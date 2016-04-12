@@ -1,0 +1,244 @@
+/*-------Basic Text/Headings--------*/
+
+body {
+	color: #595957;
+	font size:15px;
+	font-family: "Victoria Serif", sans-serif;
+	line-height: 130%;
+	margin:0;
+}
+
+ h1 {
+	color: #595957;
+	font size:200px;
+	font-family: "Modesty", sans-serif;
+	text-align: center;
+
+}
+
+h2 {
+	color: #595957;
+	font size:20px;
+	font-family: "Victoria Serif", sans-serif;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+img {
+	max-width:100%;
+}
+
+em {
+	color: #74716c;
+}
+
+
+a {
+	color: #595957;
+}
+
+a:hover {
+	color: #74716c;
+
+}
+
+/*---------Order of Text (Page 1)----------*/
+
+
+.container,
+footer,
+.gallery {
+	margin:0 auto;
+	width:88%;
+	max-width:992px; /*1140px*/
+	
+}
+
+.wrapper {
+		background:#ffffff;
+		padding:2em 0;
+}
+
+
+.secondary {
+		background:#f5f2f1;
+		padding: .15em 1em 1em 1em;
+}
+
+
+/*---------Second page Text----------*/
+
+.heading-center{
+	color: #595957;
+	font size:20px;
+	font-family: "Victoria Serif", sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+.galley-text{
+	color: #595957;
+	font size:15px;
+	font-family: "Victoria Serif", sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	width: 97%;
+	max-width: 950px;
+	padding-bottom: 15px;
+	line-height: 130%;
+
+}
+
+/*---------the header-----------*/
+.logo{
+	float: left;
+	width: 33%;
+	height:33%;
+}
+
+.name{
+	float: left;
+	width: 65%;
+	height:33%;
+}
+
+.banner{
+	/*width: 97%;*/
+	height:20%;
+	max-width: 960px;
+	margin: 0 auto;
+	background:#dbd4cd;
+	padding: 1em; 
+}
+
+
+/*--------Banner Images----------*/
+
+.name-text img {
+	width: 66%;
+}
+
+.logo img {
+	width: 85%;
+}
+
+.small {
+	display:none;
+}
+
+.hover2{
+	display:none;
+}
+
+/*---------!!!!Start of Media!!!!!-----------*/
+
+
+@media screen and (min-width:1140px){
+
+	.container {
+		display:flex;
+		justify-content:space-between;
+	}
+
+	main{ 
+		width:70%;
+		order:2;
+	}
+
+	.secondary{
+		width:25%;
+		order:1;
+	}
+
+	/*---------Gallery Start (for MOBILE)-----------*/
+
+
+.gallery{
+  position: relative;
+  height: 625px;
+  overflow: hidden;
+}
+
+.in-line-gallery{
+	display:flex;
+	text-align: center;
+	justify-content:space-between;
+	width: 97%;
+	margin: 0 auto;
+}
+
+/*----------Gallery Contunied--------------*/
+
+
+
+.small {
+  float: left;
+  margin: 7.5px;
+  display:block;
+}
+
+.hover2{
+	display:block;
+}
+
+.big {
+  position: absolute;
+  top: 1005px;
+  left: 0px;
+ 
+  -webkit-transition: top 1s ease;
+  -moz-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  -ms-transition: top 1s ease;
+  transition: top 1s ease;
+}
+
+/*.hover {
+  top: 260px;
+  left: 20px;
+  z-index: -3;
+}*/
+
+a:hover .small {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+ 
+a:hover .big {
+  top: 160.5px;
+}
+
+/*---------Gallery End-----------*/
+	
+
+} 
+
+/*-----------End of Media------------*/
+
+.link-to-home{
+	margin: 0 auto;
+	text-align: center;
+	color: #595957;
+	font size:20px;
+	font-family: "Victoria Serif", sans-serif;
+	letter-spacing: 1px;
+	text-decoration: underline;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.link-to-work{
+	color: #595957;
+	font size:20px;
+	font-family: "Victoria Serif", sans-serif;
+	letter-spacing: 1px;
+	text-decoration: underline;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
